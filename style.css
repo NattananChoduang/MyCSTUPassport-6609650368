@@ -1,0 +1,75 @@
+body {
+  font-family: "Kanit", sans-serif;
+  background-color: lightblue;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: linear-gradient(
+    45deg,
+    #03045e,
+    #023e8a,
+    #0077b6,
+    #0096c7,
+    #00b4d8
+  );
+  background-size: 40%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient 5s infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  position: fixed;
+  left: 50px;
+  top: 100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  background: #0077b6;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.ghost {
+  position: absolute;
+  left: 10px;
+}
+
+.intro {
+  display: flex;
+}
