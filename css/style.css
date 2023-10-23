@@ -6,11 +6,14 @@ body {
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
 }
 
 h1 {
+  border: 2px solid black;
+  margin: 20px;
+  padding: 10px;
   background: linear-gradient(
     45deg,
     #03045e,
@@ -60,14 +63,13 @@ h1 {
   margin: 5px 0;
 }
 
+.menu li:hover {
+  background-color: #0099cc;
+}
+
 .menu a {
   text-decoration: none;
   color: white;
-}
-
-.ghost {
-  position: absolute;
-  left: 10px;
 }
 
 .intro {
